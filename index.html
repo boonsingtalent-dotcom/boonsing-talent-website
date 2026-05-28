@@ -12,6 +12,10 @@
       box-sizing:border-box;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
@@ -20,12 +24,12 @@
     }
 
     header{
-      min-height:620px;
+      min-height:650px;
       color:white;
-      padding:28px 7% 90px;
+      padding:28px 7% 95px;
       background-image:
-        linear-gradient(rgba(0,43,82,0.78), rgba(0,43,82,0.82)),
-        url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1800&q=80");
+        linear-gradient(rgba(0,43,82,0.72), rgba(0,43,82,0.78)),
+        url("/ship.jpg");
       background-size:cover;
       background-position:center;
     }
@@ -48,7 +52,7 @@
     }
 
     .logo-box img{
-      width:92px;
+      width:105px;
       height:auto;
       display:block;
     }
@@ -58,6 +62,7 @@
       font-size:18px;
       font-weight:700;
       letter-spacing:0.5px;
+      white-space:nowrap;
     }
 
     .nav-links a{
@@ -92,7 +97,7 @@
       margin-top:28px;
       font-size:20px;
       line-height:1.8;
-      max-width:680px;
+      max-width:700px;
       opacity:0.95;
     }
 
@@ -117,7 +122,7 @@
     }
 
     .button.secondary{
-      border:1px solid rgba(255,255,255,0.6);
+      border:1px solid rgba(255,255,255,0.65);
       color:white;
     }
 
@@ -178,6 +183,17 @@
       grid-column:span 2;
     }
 
+    .role-flow{
+      text-align:center;
+      font-size:18px;
+      line-height:2;
+      color:#3f4a52;
+    }
+
+    .role-flow strong{
+      color:#003b73;
+    }
+
     .contact{
       background:#003b73;
       color:white;
@@ -213,6 +229,11 @@
     }
 
     @media(max-width:850px){
+      header{
+        min-height:auto;
+        padding-bottom:70px;
+      }
+
       nav{
         align-items:flex-start;
         gap:20px;
@@ -221,6 +242,18 @@
 
       .nav-links{
         display:none;
+      }
+
+      .logo-box{
+        padding:10px 16px;
+      }
+
+      .logo-box img{
+        width:90px;
+      }
+
+      .brand-name{
+        font-size:16px;
       }
 
       h1{
@@ -266,6 +299,7 @@
   <div class="hero">
     <div class="eyebrow">Established in Thailand</div>
     <h1>Trusted Coordination for Global Crew Solutions</h1>
+
     <div class="subtitle">
       Boon Sing Talent Co., Ltd. acts as a professional coordination bridge between shipowners, agents, and licensed manning partners for smooth crew operations.
     </div>
@@ -300,6 +334,25 @@
   </div>
 </section>
 
+<section>
+  <div class="section-title">
+    <h2>Our Role in Manning Chain</h2>
+    <p>Clear coordination structure for compliant crew operations.</p>
+  </div>
+
+  <div class="card role-flow">
+    Shipowner<br>
+    ↓<br>
+    <strong>Boon Sing Talent</strong><br>
+    Thailand – Coordination<br>
+    ↓<br>
+    Licensed MOE Partner<br>
+    Myanmar – Manning<br>
+    ↓<br>
+    Crew
+  </div>
+</section>
+
 <section id="services">
   <div class="section-title">
     <h2>Our Services</h2>
@@ -311,7 +364,7 @@
       <h3>Core Services</h3>
       <ul>
         <li>Crew coordination & planning</li>
-        <li>Crew change arrangement</li>
+        <li>Crew change arrangement in Thailand</li>
         <li>Documentation & compliance support</li>
         <li>Liaison with shipowners and agents</li>
         <li>Payroll coordination support</li>
@@ -362,6 +415,7 @@
         <li>Awareness of MLC 2006 standards</li>
         <li>Collaboration with licensed SRPS / MOE partners</li>
         <li>Respect for no-fee-to-seafarer policy</li>
+        <li>Support for documentation & audit readiness</li>
       </ul>
     </div>
 
@@ -369,6 +423,7 @@
       <h3>Our Strengths</h3>
       <ul>
         <li>Strong Thailand & Myanmar coordination</li>
+        <li>Flexible crew sourcing via licensed partners</li>
         <li>Fast response for crew change operations</li>
         <li>Operational understanding and compliance support</li>
       </ul>
